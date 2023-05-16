@@ -1,0 +1,10 @@
+.btn1{
+
+    background-color: $green-color;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    height: 3.7rem;
+    &:hover{
+        background-color:$color-black ;
+    }
+}

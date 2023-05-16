@@ -1,0 +1,135 @@
+@import './abstract/variables';
+@import './mixings/breakpoints';
+@import './abstract/common';
+@import './include/buttons';
+@import './include/header';
+@import './include/footer';
+  
+// Main content 
+
+.container-fluid{
+// sidebar icon
+    .sidebar{
+        .icon{
+            color: $green-color;
+            &:hover{
+                color:$color-black ;
+            }
+        
+        }
+    }
+}
+
+// MAIN CONTENT
+.center{
+    background-color:$mainbg-color ;
+    
+// 1ST-CARD
+.card{
+
+    background-color: $choco-color;
+    border-radius: 11px;
+// 1ST CARD FORM
+  .form{        
+    line-height: 8px;
+
+        .card1{
+
+            font-size: 0.8rem;
+            input{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                border-bottom: 1px solid white;
+                width: 40%;
+                letter-spacing: 3px;
+  
+                &::placeholder{
+                    
+                    color: white;
+                }
+            }
+           
+        }      
+        
+    }
+}
+
+}
+// CARD-2 START
+.card2{
+    font-size: 12px;
+    background-color: $choco-color;
+    color: white;
+    line-height: 21px;
+    letter-spacing: 3px;
+}
+// TABLE
+.cost{
+    background-color: $choco-color;
+    border-radius: 10px;
+    .tabletext{
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+    
+}
+
+// RIGHT NAV SEARCH
+.search{
+    background-color: $nav-color;
+
+    .type{
+
+        &::placeholder{
+
+            color: white;
+        }
+    }
+    .rightnav{
+        background-color:$nav-color ;
+        font-size: 0.8rem;
+    }
+}
+// POSITION LG START
+.card-title{
+    letter-spacing: 3px;
+}
+.card-body{
+    letter-spacing: 3px;
+}
+      .dance{  
+        top:7rem;
+        left:24rem;
+        font-size: 10px;
+        font-weight: 600;
+        .card{
+            border-radius: 10px;
+            background-color: $nav-color;
+            .card-body{
+                .dance-cont{
+                    background-color: $color-white;
+                    .text-light{
+                        font-size: 10px;
+                    }
+                    
+                }
+                .save{
+                   .btn{
+                    background-color: $green-color;
+                    border: none;
+                    border-radius: 7px;
+                    &:hover{
+                        background-color:$color-black ;
+                    }
+                   }
+                }
+            }
+        }
+
+        @include media-max-lg{
+            display: none;
+       }
+       
+    }
+    // POSITION LG END
